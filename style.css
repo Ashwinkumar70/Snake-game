@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(45deg, #1e3c72, #2a5298);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.game-container {
+  max-width: 700px;
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+canvas {
+  background: #111;
+  border: 3px solid #fff;
+  display: block;
+  margin: 0 auto;
+}
+
+.score-panel {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.controls button, .mobile-controls button {
+  background: #ff5722;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.controls button:hover, .mobile-controls button:hover {
+  transform: scale(1.1);
+}
+
+#gameOver {
+  display: none;
+  margin-top: 15px;
+  background: rgba(0,0,0,0.7);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.mobile-controls {
+  margin-top: 15px;
+}
+
+.mobile-controls div {
+  display: flex;
+  justify-content: center;
+}
